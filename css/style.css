@@ -1,0 +1,156 @@
+body{
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /*background-color: lightblue;*/
+    grid-area: header;
+}
+.header_a_logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.header__titulo {
+    margin-left: 20px;
+}
+.header_menu{
+    display: flex;
+}
+.nav_item{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.banner{
+    background-color: lightblue;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+    grid-area: banner;
+}
+.subtitulo {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ubicacion {
+    padding: 0 50px;
+    margin-bottom: 50px;
+    grid-area: ubicacion;
+}
+.ubicacion_div {
+    display: flex;
+    /*align-items: center;*/
+}
+.info_ubicacion {
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 50px;
+    grid-area: footer;
+    margin-top: 75px;
+}
+
+@media (max-width: 1130px) {
+    .imagenes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;     
+    }
+    .header__menu {
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+    .imagenes img{
+        width: 100%;
+        height: auto;
+    }
+    }
+
+@media (max-width: 600px) {
+    .ubicacion_inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info_ubicacion {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+}
+.miniCatalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "smoke blazer blue high";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.smoke{
+    grid-area: smoke;
+}
+.blazer{
+    grid-area: blazer;
+}
+.blue{
+    grid-area: blue;
+}
+.high{
+    grid-area: high;
+}
+#zapas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.cards{
+    background-color: lightblue;
+    padding: 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.cards img{
+    width: 100%;
+}
+.subtituloCatalogo{
+    font-size: 25px;
+    margin-left: 32%;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    #zapas {
+        grid-template-columns: 50% 50%;
+    }
+    .subtituloCatalogo {
+        margin-left: 10px;
+    }
+}
