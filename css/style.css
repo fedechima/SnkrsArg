@@ -59,14 +59,14 @@ a{
     /*align-items: center;*/
 }
 .info_ubicacion {
-    margin-left: 50px;
+    margin-left: 15px;
 }
 
 .footer {
     background-color: lightblue;
-    padding: 50px;
+    padding: 25px;
     grid-area: footer;
-    margin-top: 75px;
+    margin-top: 225px;
     background-image: linear-gradient(to right, #00b4db, #0083b0);
 }
 
@@ -154,4 +154,22 @@ a{
     .subtituloCatalogo {
         margin-left: 10px;
     }
+}
+.formulario {
+    margin-top: 15px;
+    margin-left: 15px;
+    }
+
+
+.nosotrosTitulo{
+    margin-top: 55px;
+}    
+.mainNosotros{
+    display: flex;
+    flex-direction: column ;
+    margin: 0 50px;
+}
+.mainNosotros h2{
+    text-align: center;
+    font-size: 25px;
 }
